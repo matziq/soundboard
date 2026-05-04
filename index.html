@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b1020" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Soundboard" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="icons/icon-192.png" />
+    <title>Soundboard</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="app-header">
+        <div class="title-row">
+            <h1>🔊 Soundboard</h1>
+            <div class="header-actions">
+                <button id="stop-all-btn" class="btn btn-danger" type="button" title="Stop all sounds">
+                    ⏹ Stop
+                </button>
+                <button id="theme-toggle-btn" class="btn btn-ghost" type="button" title="Toggle theme">
+                    🌓
+                </button>
+            </div>
+        </div>
+        <div class="controls">
+            <input id="search-input" type="search" inputmode="search" placeholder="Filter sounds…" autocomplete="off"
+                aria-label="Filter sounds" />
+            <div class="volume-row">
+                <button id="mute-btn" class="btn btn-ghost mute-btn" type="button" aria-pressed="false"
+                    title="Mute (M)">🔊</button>
+                <input id="volume-slider" type="range" min="0" max="100" step="1" value="80" aria-label="Volume" />
+                <span id="volume-value" class="volume-value" aria-live="polite">80%</span>
+            </div>
+            <div class="group-chips" id="group-chips" role="tablist" aria-label="Groups"></div>
+        </div>
+    </header>
+
+    <main id="board" class="board" aria-live="polite">
+        <div id="empty-state" class="empty-state hidden">
+            <h2>No sounds yet</h2>
+            <p>
+                Drop audio files (<code>.mp3</code>, <code>.wav</code>, <code>.ogg</code>, <code>.m4a</code>,
+                <code>.opus</code>, <code>.flac</code>) into the <code>Sounds</code> folder, then run:
+            </p>
+            <pre><code>python build_manifest.py</code></pre>
+            <p>Files are named <code>Person-Sound_Name.mp3</code> or <code>Effect-Name.mp3</code>.</p>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <span id="status">Loading…</span>
+        <span class="spacer"></span>
+        <span id="count"></span>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>

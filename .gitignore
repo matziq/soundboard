@@ -1,0 +1,22 @@
+# Local / build artifacts
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Capacitor / Bubblewrap output (if you wrap as APK)
+node_modules/
+android/
+ios/
+dist/
+build/
+
+# Audio files — uncomment if you don't want to commit large assets
+# Sounds/*.mp3
+# Sounds/*.wav
+# Sounds/*.ogg
+# Sounds/*.m4a
+# Sounds/*.opus
+# Sounds/*.flac
