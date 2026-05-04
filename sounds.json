@@ -37,6 +37,30 @@
       "source": "Back_To_The_Future"
     },
     {
+      "path": "Elf/Elf-Dad_Im_In_Love.mp3",
+      "source": "Elf"
+    },
+    {
+      "path": "Elf/Elf-I'm_Singing.mp3",
+      "source": "Elf"
+    },
+    {
+      "path": "Elf/Elf-Santa_I_Know_Him.mp3",
+      "source": "Elf"
+    },
+    {
+      "path": "Elf/Elf-Smiling_Is_My_Favorite.mp3",
+      "source": "Elf"
+    },
+    {
+      "path": "Elf/Elf-You_Disgust_Me_How_Can_You_Live_With_Yourself.mp3",
+      "source": "Elf"
+    },
+    {
+      "path": "Jurassic_Park/Lex-It's_A_Unix_System.mp3",
+      "source": "Jurassic_Park"
+    },
+    {
       "path": "Monty_Python_And_The_Holy_Grail/Black_Knight-Bite_Your_Legs_Off.mp3",
       "source": "Monty_Python_And_The_Holy_Grail"
     },
@@ -125,5 +149,5 @@
       "source": "Star_Wars"
     }
   ],
-  "count": 31
+  "count": 37
 }
